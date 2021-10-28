@@ -1,0 +1,31 @@
+from djitellopy import Tello
+from time import sleep
+
+tello = Tello()
+tello.connect()
+tello.takeoff()
+
+sleep(2)
+tello.move_up(76.2)
+
+sleep(2)
+tello.move_forward(304.8)
+
+sleep(2)
+tello.move_left(304.8)
+
+sleep(2)
+tello.move_back(304.8)
+
+sleep(2)
+tello.move_right(304.8)
+
+sleep(2)
+tello.flip_forward(30.48)
+
+sleep(2)
+tello.move_back(30.48)
+
+sleep(2)
+tello.land()
+tello.end()
